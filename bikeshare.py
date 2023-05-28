@@ -202,7 +202,7 @@ def user_stats(df):
         print('Birth Year stats cannot be calculated because Birth Year does not appear in the dataframe')
 
 
-def detalis(df):
+def row_data(df):
     """
     The function allows the user to show detailed data.
     Parameters
@@ -242,7 +242,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        detalis(df)
+        row_data(df)
         restart = input('\nWould you explore data again? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
