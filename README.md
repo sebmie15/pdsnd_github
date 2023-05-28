@@ -9,6 +9,8 @@ You can use the following filters:
 - month
 - day of the week
 
+There is also a functionality that allow you view row data. 
+
 #### Files used
 Files provided by Udacity:
  - washington.csv 
