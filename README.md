@@ -6,8 +6,9 @@
 The project concerns the creation of a tool that will allow you to interactively analyze data from 3 cities: Washington, New York City, Chicago
 
 #### Files used
-washington.csv
-new_york_city.csv
-chicago.csv
-
+Files provided by Udacity:
+ - washington.csv 
+ - new_york_city.csv 
+ - chicago.csv
+ 
 #### Credits
