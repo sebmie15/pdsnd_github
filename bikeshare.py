@@ -202,7 +202,7 @@ def user_stats(df):
         print('Birth Year stats cannot be calculated because Birth Year does not appear in the dataframe')
 
 
-def detalis(df):
+def row_data(df):
     """
     The function allows the user to show detailed data.
     Parameters
@@ -214,21 +214,21 @@ def detalis(df):
     None.
     """
     DetaliedData = str(input("which you like to see detalis? Enter yes or no.\n")).lower()
-    Startiloc = 0
-    EndIloc = 4
+    FirstRow = 0
+    LastRow = 4
     while True:
         if DetaliedData != 'yes':
             break
         else:
-            df1 = df.iloc[Startiloc:EndIloc]
+            df1 = df.iloc[FirstRow:LastRow]
             print(df1)
             MoreData = str(input("which you like to see another 5 rows? Enter yes or no.\n")).lower()
             if MoreData != 'yes':
                 break
             else:
-                Startiloc += 4
-                EndIloc += 4
-                df1 = df.iloc[Startiloc:EndIloc]
+                FirstRow += 4
+                LastRow += 4
+                df1 = df.iloc[FirstRow:LastRow]
                 if df1.empty:
                     print("There is no data to show.")
                     break
@@ -242,7 +242,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        detalis(df)
+        row_data(df)
         restart = input('\nWould you explore data again? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
