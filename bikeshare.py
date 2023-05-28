@@ -214,21 +214,21 @@ def detalis(df):
     None.
     """
     DetaliedData = str(input("which you like to see detalis? Enter yes or no.\n")).lower()
-    Startiloc = 0
-    EndIloc = 4
+    FirstRow = 0
+    LastRow = 4
     while True:
         if DetaliedData != 'yes':
             break
         else:
-            df1 = df.iloc[Startiloc:EndIloc]
+            df1 = df.iloc[FirstRow:LastRow]
             print(df1)
             MoreData = str(input("which you like to see another 5 rows? Enter yes or no.\n")).lower()
             if MoreData != 'yes':
                 break
             else:
-                Startiloc += 4
-                EndIloc += 4
-                df1 = df.iloc[Startiloc:EndIloc]
+                FirstRow += 4
+                LastRow += 4
+                df1 = df.iloc[FirstRow:LastRow]
                 if df1.empty:
                     print("There is no data to show.")
                     break
