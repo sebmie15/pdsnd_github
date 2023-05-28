@@ -19,3 +19,5 @@ Files provided by Udacity:
 Websites that supported me:
 - https://pandas.pydata.org/docs/index.html 
 - https://www.w3schools.com/python/
+- https://www.learnpython.org/
+- https://www.geeksforgeeks.org/python-programming-language/?ref=shm
