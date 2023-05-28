@@ -16,3 +16,6 @@ Files provided by Udacity:
  - chicago.csv
  
 #### Credits
+Websites that supported me:
+- https://pandas.pydata.org/docs/index.html 
+- https://www.w3schools.com/python/
